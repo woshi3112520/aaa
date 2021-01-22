@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.headerbox{
+			width:100%;
+			height:114px;
+
+		}
+		.headerbox .header{
+			width:972px;
+			height:114px;
+			margin:0 auto;
+
+		}
+		.headerbox .header .logo{
+			float:left;
+			height:114px;
+			width:177px;
+		}
+		.headerbox .header .logo img{
+			margin-top:42px;
+			margin-bottom:30px;
+		}
+		.headerbox .header .nav{
+			float:right;
+			width:510px;
+			height:40px;
+			margin-top:40px;
+			background:white;
+		}
+		.headerbox .header .nav ul{
+			list-style:none;
+			
+		}
+		.headerbox .header .nav ul li{
+			float:left;
+			line-height:40px;
+			height:40px;
+			font-size:13px;
+			margin-right:22px;
+		}
+		.headerbox .header .nav ul li a{
+			text-decoration:none;
+			color:black;
+		}
+		.headerbox .header .nav ul li:hover{
+			border-top:2px solid #8c8c8c;
+			color:#333333;
+		}
+		.banner{
+			width:100%;
+			height:467px;
+		}
+		.banner img{
+			width:100%;
+			height:100%;
+		}
+		.contentbox{
+			width:100%;
+			height:382px;
+		}
+		.contentbox .content{
+			width:974px;
+			height:382px;
+			margin:0 auto;
+			background:#ffffff;
+		}
+		.contentbox .content .content-left{
+			width:250px;
+			height:300px;
+	
+			float:left;
+			margin-top:45px;
+			text-align:center;
+			padding:0px 17px 0px 17px;
+		}
+		.contentbox .content .content-middle{
+			width:250px;
+			height:300px;
+
+			float:left;
+			margin:45px 60px 0px 60px;
+			text-align:center;
+			padding:0px 17px 0px 17px;
+		}
+		.contentbox .content .content-right{
+			width:250px;
+			height:300px;
+
+			float:right;
+			margin-top:45px;
+			text-align:center;
+			padding:0px 17px 0px 17px;
+		}
+		.contentbox .content img{
+			margin-top:24px;
+		}
+		.contentbox .content .logo:hover{
+			background:#f7f7f7;
+			border:1px solid #e5e5e5;
+		}
+		.casebox{
+			width:100%;
+			height:710px;
+			background:url(../images/case_02.jpg);
+			margin-bottom:25px;
+		}
+		.casebox .case{
+			width:972px;
+			height:710px;
+			margin:0 auto;
+		}
+		.casebox .case  .box1{
+			width:224px;
+			height:209px;
+			
+			float:left;
+			margin-right:25px;
+		}
+		.casebox .case  .box4{
+			margin-right:0;
+		}
+		.casebox .case .case-top{
+			width:100%;
+			height:355px;
+
+			float:left;
+		}
+		.casebox .case .case-top .p1{
+			margin-top:39px;
+			margin-bottom:18px;
+			text-align:center;
+		}
+		.casebox .case .case-top p{
+			text-align:center;
+			font-size:12px;
+			line-height:40px;
+			background:#cbcbcc;
+		}
+		.casebox .case img{
+			display:block;
+		}
+		.casebox .case .case-bottom{
+			width:100%;
+			height:295px;
+			float:left;
+			padding-top:60px;
+		}
+		.casebox .case .case-bottom p{
+			text-align:center;
+			font-size:12px;
+			line-height:40px;
+			background:#cbcbcc;
+		}
+		.bottombox{
+			width:100%;
+			height:230px;
+			border-top:1px solid #e1e1e1;
+			background:#ecedef;
+		}
+		.bottombox .bottom{
+			height:230px;
+			width:972px;
+			margin:0 auto;
+		}
+		.bottombox .bottom .bottom-left{
+			width:368px;
+			height:230px;
+			float:left;
+		}
+		.bottombox .bottom dl{
+			float:left;
+			
+			
+			margin-top:30px;
+		}
+		.bottombox .bottom dl dt{
+			padding-right:20px;
+			padding-left:30px;
+			margin-bottom:13px;
+			font-size:15px;
+			color:#454a50;
+		}
+		.bottombox .bottom dl dd{
+			padding-right:20px;
+			padding-left:30px;
+			line-height:26px;
+			font-size:11px;
+			color:#707070;
+			background:url(../images/jiantou_18.png) no-repeat left center;
+		}
+		.bottombox .bottom .bottom-middle{
+			width:278px;
+			height:200px;
+			float:left;
+			text-align:center;
+/*			padding:13px 0 13px 0;*/
+			border-right:1px solid #d1d1d1;
+			border-left:1px solid #d1d1d1;
+			margin-top:15px;
+			
+		}
+		.bottombox .bottom .bottom-middle p{
+			text-align:center;
+			margin-top:15px;
+			color:#6d6d6d;
+			margin-bottom:14px;
+		}
+		.bottombox .bottom .bottom-middle h3{
+			font-weight:normal;
+			line-height:20px;
+			font-size:12px;
+			text-align:center;
+			color:#8c8c8c;
+		}
+		.bottombox .bottom .bottom-middle img{
+			text-align:center;
+			margin-top:34px;
+		}
+		.bottombox .bottom .bottom-right{
+			width:260px;
+			height:230px;
+			float:left;
+			padding-left:50px
+		}
+		.bottombox .bottom .bottom-right .box1{
+			background:url(../images/sm_03.jpg) no-repeat left center;
+			overflow:hidden; 
+		}
+		.bottombox .bottom .bottom-right div{
+			margin-bottom:15px;
+		}
+		.bottombox .bottom .bottom-right .box2{
+			text-indent:26px;
+			font-size:12px;
+			color:#707070;
+			background:url(../images/sm_07.jpg) no-repeat left center;
+		}
+		.bottombox .bottom .bottom-right .box3{
+			text-indent:26px;
+			font-size:12px;
+			color:#707070;
+			background:url(../images/sm_11.jpg) no-repeat left center;
+		}
+		.footerbox{
+			height:40px;
+			background:#505153;
+		}
+		.footerbox .footer{
+			height:40px;
+			width:972px;
+			margin:0 auto;
+					}
+		.footerbox .footer{
+			text-align:center;
+
+		}
+		.footerbox .footer p{
+			line-height:40px;
+			color:white;
+			font-size:12px;
+		}
+	</style>
+</head>
+<body>
+	<div class="headerbox">
+		<div class="header">
+			<div class="logo">
+				<a href=""><img src="../images/logo.jpg" alt=""></a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">公司观点</a></li>
+					<li><a href="">公司观点</a></li>
+					<li><a href="">公司观点</a></li>
+					<li><a href="">公司观点</a></li>
+					<li><a href="">公司观点</a></li>
+					<li style="margin-right:0">公司观点</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="banner">
+		<a href=""><img src="../images/banner_02.jpg" alt=""></a>
+	</div>
+	<div class="contentbox">
+		<div class="content">
+			<div class="content-left logo">
+				<img src="../images/content_05.jpg" alt="">
+				<p style="font-size:18px;color:#777777;line-height:18px;margin-bottom:18px;margin-top:25px">企业新闻/NEWS</p>
+				<p style="font-size:12px;color:#8d8d8d;line-height:24px">1990年9月设置工厂以来，二十多年的发展岁月中坚持向客户供应优质的管材，与客户共进退、共发展的企业爱康管材的品质已经取得...</p>
+				<p style="font-size:3px;margin-top:20px;color:#47484a">READ MORE >></p>		
+			</div>
+			<div class="content-middle logo">
+				<img src="../images/content_07.jpg" alt="">
+				<p style="font-size:18px;color:#777777;line-height:18px;margin-bottom:18px;margin-top:25px">企业新闻/NEWS</p>
+				<p style="font-size:12px;color:#8d8d8d;line-height:24px">1990年9月设置工厂以来，二十多年的发展岁月中坚持向客户供应优质的管材，与客户共进退、共发展的企业爱康管材的品质已经取得...</p>
+				<p style="font-size:3px;margin-top:20px;color:#47484a">READ MORE >></p>			
+			</div>
+			<div class="content-right logo"><img src="../images/content_09.jpg" alt="">
+				<p style="font-size:18px;color:#777777;line-height:18px;margin-bottom:18px;margin-top:25px">企业新闻/NEWS</p>
+				<p style="font-size:12px;color:#8d8d8d;line-height:24px">1990年9月设置工厂以来，二十多年的发展岁月中坚持向客户供应优质的管材，与客户共进退、共发展的企业爱康管材的品质已经取得...</p>
+				<p style="font-size:3px;margin-top:20px;color:#47484a">READ MORE >></p>				
+			</div>
+		</div>
+	</div>
+	<div class="casebox">
+		<div class="case">
+			<div class="case-top">
+			<h1 class="p1">工程案例</h1>
+				<div class="box1"><img src="../images/ta_05.jpg"  alt=""><p>热泵和冰蓄冷技术将引领未来冷暖</p></div>
+				<div class="box1"><img src="../images/ta_07.jpg" alt=""><p>经销商1</p></div>
+				<div class="box1"><img src="../images/ta_09.jpg" alt=""><p>经销商1</p></div>
+				<div class="box1 box4"><img src="../images/ta_11.jpg" alt=""><p>经销商1</p></div>
+			</div>
+			<div class="case-bottom">
+				<div class="box1"><img src="../images/ta_05.jpg" alt=""><p>热泵和冰蓄冷技术将引领未来冷暖</p></div>
+				<div class="box1"><img src="../images/ta_07.jpg" alt=""><p>经销商1</p></div>
+				<div class="box1"><img src="../images/ta_09.jpg" alt=""><p>经销商1</p></div>
+				<div class="box1 box4"><img src="../images/ta_05.jpg" alt=""><p>经销商1</p></div>
+			</div>
+		</div>
+	</div>
+	<div class="bottombox">
+		<div class="bottom">
+			<div class="bottom-left">
+			<dl>
+					<dt>关于我们</dt>
+					<dd>地暖管道系统</dd>
+					<dd>分集水器1</dd>
+					<dd>分集水器</dd>
+					<dd>PE-RT管件</dd>
+					<dd>PB管件</dd>
+					<dd>管件</dd>
+			</dl>
+			<dl>
+					<dt>服务支持</dt>
+					<dd>地暖管道系统</dd>
+					<dd>分集水器1</dd>
+					<dd>分集水器</dd>
+					<dd>PE-RT管件</dd>
+					<dd>PB管件</dd>
+					<dd>管件</dd>
+			</dl>
+			<dl style="margin-right:0">
+					<dt>联系我们</dt>
+					<dd>地暖管道系统</dd>
+					<dd>分集水器1</dd>
+					<dd>分集水器</dd>
+					<dd>PE-RT管件</dd>
+					<dd>PB管件</dd>
+					<dd>管件</dd>
+			</dl>
+			</div>
+			<div class="bottom-middle">
+				<p>ECOSYS</p>
+				<h3>织梦58科技有限公司最新申请的商标代表绿色、低碳、环保</h3>
+				<img src="../images/ft_03.jpg" alt="">
+			</div>
+			<div class="bottom-right">
+				<div class="box1" style="margin-top:30px">
+					
+					<p style="float:right;margin-right:55px;font-size:12px;color:#707070">2528323797@qq.com</p>
+				</div>
+				<div class="box2"><p>海口市国贸</p></div>
+				<div class="box3">0371-55617968/某某某:18561835702</div>
+				<div class="box2"><p>海口市国贸</p></div>
+				<div class="box3">0371-55617968/某某某:18561835702</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerbox">
+		<div class="footer">
+		 	<p>织梦58科技有限公司 AIKANG Fitness Co.,@2014-2020 CopyRight 京ICP备09999759号</p>
+		</div>
+
+	</div>
+</body>
+</html>
